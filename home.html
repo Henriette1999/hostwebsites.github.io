@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="home.css">
+    <title>My Portofilio</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-warning navbar-dark py-3   ">
+      <div class="container">
+        <a href="#" class="navbar-brand">My Portofilio</a>
+        
+        <button 
+        class="navbar-toggler"
+        type="button" 
+        data-bs-toggle="collapse"
+         data-bs-target="#navmenu"> <!--navmenu is similar to id in collapse class-->
+        <span class="navbar-toggler-icon"></span><!--Icon that will contain the list menu when 
+            reaches on the small screen -->
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu" ><!--collapse is to help the web page 
+            display on small screen-->
+            <ul class="navbar-nav ms-auto"><!--ms-auto is to put li in right side of navbar-->
+
+                <li class="nav-item">
+                    <a href="#Learned" class="nav-link">What I have learned</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#Questions" class="nav-link">Exprience</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#Instructors" class="nav-link">Hobbies</a>
+                </li>
+
+            </ul>
+        </div>
+      </div>
+  </nav>
+  <!--ShowCase-->
+  <section class="bg-dark text-light p-5 p-lg-0 text-center mt-10">
+      <!-- add text-sm-start to make the text small on the small screen -->
+      <!--Also (pt-lg-5) used to put top padding on all the body to put it down-->
+      <div class="container">
+              <div class="d-sm-flex ">
+                  <!--To divide two parties side-by side but if you want you 
+                    can put sm to make break in responsiveness-->
+                  <!--(align-items-center justify-content-between) used to put space between content-->
+                 <div>
+                <h1 class="my-4 ">I'm a <span class="text-warning"><!--use of span to give the 
+                    text color warning= yellow -->
+                    Programmer
+                  </span></h1>
+                  <p class="lead bg-primary "><!--lead means to increase the size of the text-->
+                    My name is <span class="text-warning">Henriette Mutuyimana</span> 
+                    ,I develope different Websites,
+                    Android applications, Web applications
+                    and I'm skilled in networking. 
+                    In additinal, I learned Leadership Skills,
+                    Public Speaking, Business communication,
+                    Business Intelligence, Social Change
+                    and Marketing
+                  </p>
+                  <button class="btn btn-primary btn-lg my-4">Read More</button>
+              </div>
+              <img class="img-fluid my-4 d-none d-sm-block" width="30%" src="me.jpg" alt="#">
+              <!--img-fluid is to put imge in the container and w-50 is th width of the image-->
+              <!--d-none is like to hidden the image, while d-sm-block is to
+                 hidden the image when reach on the small screen-->
+          </div>
+      </div>
+  </section>
+  <!--Newsletter-->
+  <section class="bg-primary text-light p-5">
+      <div class="container">
+          <div class="d-md-flex justify-content-between align-items-center">
+              <h3 class="mb-3 mb-md-0">Sign Up To Contact Me</h3>
+
+              <div class="input-group news-input">
+                  <!--(news-input) class to make the input smaller-->
+                <input 
+                type="text" class="form-control"
+                 placeholder="Enter Email" 
+                 />
+                <button 
+                class="btn btn-dark btn-lg" 
+                type="button">Button
+            </button>
+              </div>
+
+          </div>
+      </div>
+  </section>
+  <!--Boxes-->
+  <section class="p-5">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-md">
+                  <div class="card bg-dark text-light">
+                      <div class="card-body text-center">
+                      <div class="h1 mb-3"><!--By giving the icon class increase it's size-->
+                        <i class="bi bi-laptop"></i><!--Method for boostrap Icon-->
+                      </div>
+
+                      <h3 class="card-title mb-3 text-warning">
+                         Projects
+                      </h3>
+
+                      <p class="card-text lead">
+                          Lorem ipsum dolor sit amet,
+                           consectetur adipisicing elit. 
+                           Repellendus, soluta voluptates 
+                           quod saepe corporis ducimus.
+                      </p>
+
+                      <a href="project1.html" class="btn btn-primary lead">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="card bg-secondary text-light">
+                    <div class="card-body text-center">
+                    <div class="h1 mb-3"><!--By giving the icon class increase it's size-->
+                      <i class="bi bi-person-square"></i><!--Method for boostrap Icon-->
+                    </div>
+
+                    <h3 class="card-title mb-3 ">
+                        Written Proposal Projects
+                    </h3>
+
+                    <p class="card-text lead">
+                        Lorem ipsum dolor sit amet,
+                         consectetur adipisicing elit. 
+                         Repellendus, soluta voluptates 
+                         quod saepe corporis ducimus.
+                    </p>
+
+                    <a href="#" class="btn btn-dark lead">Read More</a>
+                </div>
+              </div>
+              </div>
+              <div class="col-md">
+                <div class="card bg-dark text-light">
+                    <div class="card-body text-center">
+                    <div class="h1 mb-3"><!--By giving the icon class increase it's size-->
+                      <i class="bi bi-people"></i><!--Method for boostrap Icon-->
+                    </div>
+
+                    <h3 class="card-title mb-3 text-warning">Virtual</h3>
+
+                    <p class="card-text lead">
+                        Lorem ipsum dolor sit amet,
+                         consectetur adipisicing elit. 
+                         Repellendus, soluta voluptates 
+                         quod saepe corporis ducimus.
+                    </p>
+
+                    <a href="#" class="btn btn-primary lead">Read More</a>
+                </div>
+              </div>
+              </div><!--md means to put col in center followed each other
+                up and down when reach on the median scr-->
+          </div>
+      </div>
+  </section>
+  <!--Learn Sections-->
+  <section id="learn" class="p-5 bg-secondary">
+      <div class="container">
+          <div class="row align-items justify-content-between">
+              <div class="col-md">
+              <img src="java.jpg" width="100%" alt="#" class="img-fluid">
+              </div>
+
+              <div class="col-md p-5">
+              <h2 class="text-dark">Learn Java</h2>
+              <p class="lead">
+                  Lorem ipsum dolor, sit amet consectetur
+                   adipisicing elit.Numquam ab voluptate soluta
+                    illum sed libero, consequatur inventore corporis 
+                    ratione, ea nemo quae, enim harum omnis? Quod tenetur 
+                    at quis alias!
+              </p>
+              <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Harum obcaecati quibusdam debitis a amet id nemo sit, 
+                   consectetur blanditiis accusantium mollitia, 
+                   dolores rem molestiae, aut libero non 
+                   dolorem facilis! Nobis!
+              </p>
+              <a href="#" class="btn btn-warning mt-3">
+                  <i class="bi bi-chevron-right lead">Learn More</i>
+              </a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+<!--Another section-->
+
+  <section id="learn" class="p-5 bg-dark">
+    <div class="container">
+        <div class="row align-items justify-content-between">
+
+ 
+            <div class="col-md p-5 text-light">
+            <h2>Learn Website</h2>
+            <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur
+                 adipisicing elit.Numquam ab voluptate soluta
+                  illum sed libero, consequatur inventore corporis 
+                  ratione, ea nemo quae, enim harum omnis? Quod tenetur 
+                  at quis alias!
+            </p>
+            <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Harum obcaecati quibusdam debitis a amet id nemo sit, 
+                 consectetur blanditiis accusantium mollitia, 
+                 dolores rem molestiae, aut libero non 
+                 dolorem facilis! Nobis!
+            </p>
+            <a href="#" class="btn btn-warning mt-3">
+                <i class="bi bi-chevron-right lead">Learn More</i>
+            </a>
+        </div>
+        <div class="col-md">
+            <img src="web.jpg" width="100%" alt="#" class="img-fluid">
+            </div>
+      </div>
+    </div>
+</section>
+
+<!--My Hobbies-->
+<section id="hobbies" class="p-5 bg-primary">
+
+</section>
+
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous">
+</script> 
+</body>
+</html>

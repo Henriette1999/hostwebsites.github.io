@@ -1,0 +1,229 @@
+<!doc type html>
+<html>
+<head>
+<title>
+</title>
+</head>
+<style>
+
+body{
+background-color:#758da3;
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0f3b57;
+  color: white;
+  text-align: center;
+}
+</style>
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <a class="active" href="Project1.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Us
+	  <i class="fa fa-address-book-o"></i>
+	  </button>
+	  <div class="dropdown-content">
+	 <a href="educ.html">Education Endownment</a>
+      <a href="personal.html">Personal Pension Plan</a>
+      <a href="loan.html">Loan Protection Assurance </a>
+	  <a href="family.html">Family Protection Insurance</a>
+	  <a href="group.html">Group Life Assurance</a>
+	  <a href="pension.html">Pension PLans of Various Categories of Person</a>
+    </div>
+  </div>
+  <a href="project2.html"><i class="fa fa-phone"></i> Contact</a>
+  <a href="project3.html"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="project4.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+  <a href="form.html"><i class="fa fa-address-card-o"></i> Payment</a>
+  
+
+</div>
+<form>
+<body>
+<h1> PAYMENT MODE:</h1>
+<h2> Please check if the boxes provided to specify the mode of payment that you often use. Tick more as you can.</h2>
+<form>
+FIST NAME:<br>
+<input type="text" name="FIST NAME"><br>
+LAST NAME:<br>
+<input type="text" name="LAST NAME"><br>
+</form>
+<h2> SPECIFY YOUR GENDER</h2>
+<form>
+<input type="radio" name="SPECIFY YOUR GENDER" value="MALE"    >MALE<br>
+<input type="radio" name="SPECIFY YOUR GENDER" Value="FEMALE"> FEMALE<br>
+</form>
+<h2> PAYMENT MODE:</h2>
+<input type="checkbox" name="MODE1" value="CASH"    >CASH<br>
+<input type="checkbox" name="MODE2" Value="ATM"> ATM<br>
+<input type="checkbox" name="MODE3" Value="ONLINE">ONLINE<br>
+<input type="checkbox" name="MODE4" Value="OTHERS">other<br>
+</form>
+<form>
+<input type="submit" value="Submit"><br>
+</form>
+<div class="footer">
+ <footer>
+  <p style="text-align:center">
+  <b>Call:</b> (+250) 788 500 144<br>
+Monday-Thursday (7:30 am-5:30 pm)<br>
+Friday : 7:30 am - 4:30 pm</p>
+</footer>
+</div>
+</body>
+</html>

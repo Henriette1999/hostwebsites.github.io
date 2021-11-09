@@ -1,0 +1,419 @@
+<html>
+<head>
+<title>
+PROJECT
+</title>
+</head>
+<style>
+body{
+background-color:#758da3;
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.change{
+margin-left:25px;
+margin-right:25px;
+}
+h1{
+color:#4A0000;
+}
+h2{
+color:#850505;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0f3b57;
+  color: white;
+  text-align: center;
+}
+</style>
+<br>
+<body>
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <a class="active" href="Project1.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Us
+	  <i class="fa fa-address-book-o"></i>
+	  </button>
+	  <div class="dropdown-content">
+	 <a href="educ.html">Education Endownment</a>
+      <a href="personal.html">Personal Pension Plan</a>
+      <a href="loan.html">Loan Protection Assurance </a>
+	  <a href="family.html">Family Protection Insurance</a>
+	  <a href="group.html">Group Life Assurance</a>
+	  <a href="pension.html">Pension PLans of Various Categories of Person</a>
+    </div>
+  </div>
+  <a href="project2.html"><i class="fa fa-phone"></i> Contact</a>
+  <a href="project3.html"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="project4.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+
+</div>
+<br><br>
+<div class="change">
+<h1><center><b>GROUP LIFE ASSURANCE</h1></center></b>
+<hr>
+<br>
+<img src="group1.jpg" align="left" width="30%"/><p>Group Life Assurance Plan is designed to provide Death in service benefits, which pays out in the event<br>
+ of the member’s death while still a member of the group.<br><br>
+
+The benefits or Sum assured is usually fixed or related to a multiple of one’s annual salary. The benefit is determined <br>
+by the Employer/Organization because the cost (Life cover premium) is borne by them.<br><br>
+
+Group Life policy is based on the Yearly Renewable Term (YRT) where the premium for the year’s coverage is calculated.<br><br>
+
+The premium is based on the individual’s age and the selected Sum assured.<br><br>
+
+The premium for the whole scheme is the sum of the individual premiums.<br><br></p>
+
+<img src="plan3.jpg" align="right" width="30%"/><h2><b>The plan has the following additional / supplementary covers:</h2></b>
+
+<p><li>Total Permanent Disability cover<br><br></li>
+
+<li>Funeral/ Last expenses cover<br><br></li>
+
+<li> Critical Illness cover<br><br></li>
+
+<li>Disability loss of income cover<br><br></li>
+
+<li> Retirement Plan<br><br></li>
+
+The employer could pay the totality of the premiums on behalf of the employees or participate up to a certain percentage considered adequate and the balance to<br>
+ be paidby employees themselves. This policy can serve as a security for loans.Master policy and individual certificates are issued.<br><br></p>
+
+<h2><b>Definitions:</h2></b>
+<br>
+<h2><b>Total Permanent Disability</h2></b>
+<br>
+
+<p>Total permanent disability is defined as disability resulting from bodily injuries or illness which totally prevents the Assured from engaging in any business or <br>
+occupation andfrom performing any work for compensation or profit and which disability has continued uninterrupted for a period of at least six (6) months</p><br><br>
+
+<h2>Funeral/ Last expenses cover</h2><img src="funeral.jpg" align="right" height="50%"width="20%"/><br>
+
+<p>The Insurance will pay the benefits as shown on the Schedule of benefits or the endorsement in the event <br>
+the Assured decease while in service.</p></br>
+<br>
+
+<h2>Critical illness cover</h2>
+
+<p align="left" Events on which the benefits become payable :><br><br>
+
+This benefit shall become payable if it has been diagnosed by a qualified Doctor that during the period of cover the Life Assured has suffered from or developed one of the following diseases:<br><br>
+
+- Heart Attack<br><br>
+
+- Coronary Artery Surgery<br><br>
+
+- Stroke<br><br>
+
+- Cancer <img src="group5.jpg" align="right" width="50%"/><br><br>
+
+- Kidney/Renal Failure<br><br>
+
+- Aorta Surgery<br><br>
+
+- Replacement of Heart Valve<br><br>
+
+- Paraplegia<br><br>
+
+- Blindness<br><br>
+
+- Major Organ Transplant<br><br>
+
+- Major burns<br><br>
+
+- Coma<br><br>
+
+The maximum benefit any Employee may receive from the scheme is 50% of the Sum Assured of the basic policy up to a maximum <BR>
+of RWF 3.500.000.<br><br></p>
+
+<h2>Disability loss of income cover</h2>
+
+<p>Disability Loss of Income cover offers financial protection in the case of an Insured’s prolonged incapacity.The level of benefit is related to the Insured’snormal income.<br><br>
+
+For the purpose of this cover, disability is defined as “totally disabled by reason of injury or illness from following the employee’s usual occupation or any other to which<br>
+ he may be reasonable suited by training, education or experience”.<br><br>
+
+The Policy will commence payment of benefit after six (6) months continuous disability.The maximum benefit any Employee may receive from the scheme is 75% of pre-disability <br>
+monthly salary for two years.<br><br>
+
+Premiums will be waived in respect of an individual who is receiving benefits.<br><br>
+
+Retirement Plan<br><br></p>
+
+<h2>Benefits :</h2>
+
+<p>In event of the Policyholder’s death before the Policy matures the Company shall make payable the funds allocatedto such a Policy.Subject to the premiums due in the first <br>
+three years policy having been paid and the Policy having remained in force for three complete policy years, the Company shall grant a surrender value of 100 % of the <br>
+mathematical provision.<br><br>
+
+Loans are made by the Company on the security of this Policy within the surrender value at the rates of interest fixed by the Company from time to time.<br><br></div>
+ 
+  </div>
+ <div class="slideshow-container" align="right">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="group2.jpg" style="width:60%">
+	<p>Save your Life and Live with<b><span  style="color:#123524"> SONARWA LIFE INSURANCE LIMITED</span></b></p>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="group3.jpg" style="width:50%">
+	<p>Save your Life and Live well <b><span  style="color:#123524"> SONARWA LIFE INSURANCE LIMITED</span></b></p>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="group4.jpg" style="width:50%">
+	<p>Save your Life and Live well with<b><span  style="color:#123524"> SONARWA LIFE INSURANCE LIMITED</span></b></p>
+	</div>
+  
+<br>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+<div class="footer">
+ <footer>
+  <p style="text-align:center">
+  <b>Call:</b> (+250) 788 500 144<br>
+Monday-Thursday (7:30 am-5:30 pm)<br>
+Friday : 7:30 am - 4:30 pm</p>
+</footer>
+</div>
+</body>
+</html>

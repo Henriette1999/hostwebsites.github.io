@@ -1,0 +1,433 @@
+<html>
+<head>
+<title>
+PROJECT
+</title>
+</head>
+<style>
+body{
+background-color:#758da3;
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.sign-up-container {
+	border: 1px solid;
+	border-color: #9a9a9a;
+	background: #fff;
+	border-radius: 4px;
+	padding: 10px;
+	width: 350px;
+	margin: 50px auto;
+}
+
+.page-header {
+	float: right;
+}
+
+.login-signup {
+	margin: 10px;
+	text-decoration: none;
+	float: right;
+}
+
+.login-signup a {
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.signup-heading {
+	font-size: 2em;
+	font-weight: bold;
+	padding-top: 60px;
+	text-align: center;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.row {
+	margin: 15px 0px;
+	text-align: center;
+}
+
+.form-label {
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+input.input-box-330 {
+	width: 250px;
+}
+
+.sign-up-container .error {
+	color: #ee0000;
+	padding: 0px;
+	background: none;
+	border: #ee0000;
+}
+
+.sign-up-container .error-field {
+	border: 1px solid #d96557;
+}
+
+.sign-up-container .error:before {
+	content: '*';
+	padding: 0 3px;
+	color: #D8000C;
+}
+
+.error-msg {
+	padding-top: 10px;
+	color: #D8000C;
+	text-align: center;
+}
+
+.success-msg {
+    padding-top: 10px;
+	color: #176701;
+	text-align: center;
+}
+
+input.btn {
+	width: 250px
+}
+
+.signup-align {
+	margin: 0 auto;
+}
+
+.page-content {
+	font-weight: bold;
+	padding-top: 60px;
+	text-align: center;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0f3b57;
+  color: white;
+  text-align: center;
+}
+</style>
+<br>
+<body>
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <a class="active" href="Project1.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Us
+	  <i class="fa fa-address-book-o"></i>
+	  </button>
+	  <div class="dropdown-content">
+	 <a href="educ.html">Education Endownment</a>
+      <a href="personal.html">Personal Pension Plan</a>
+      <a href="loan.html">Loan Protection Assurance </a>
+	  <a href="family.html">Family Protection Insurance</a>
+	  <a href="group.html">Group Life Assurance</a>
+	  <a href="pension.html">Pension PLans of Various Categories of Person</a>
+    </div>
+  </div>
+  <a href="project2.html"><i class="fa fa-phone"></i> Contact</a>
+  <a href="project3.html"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="project4.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+   
+   </div>
+</div>
+<h1><center>CREATE ACCOUT IF YOU DON'T HAVE EMAIL TO LOGIN</h1></center>
+<hr <hr style="width:50%">
+<p> <center>If you have no account you create account to keap in touch with us</p></center>
+	<div class="phppot-container">
+		<div class="sign-up-container">
+			<div class="login-signup">
+				<a href="project3.html">Login</a>
+			</div>
+			<div class="">
+				<form name="sign-up" action="" method="post"
+					onsubmit="return signupValidation()">
+					<div class="signup-heading">Registration</div>
+				<?php
+    if (! empty($registrationResponse["status"])) {
+        ?>
+                    <?php
+        if ($registrationResponse["status"] == "error") {
+            ?>
+				    <div class="server-response error-msg"><?php echo $registrationResponse["message"]; ?></div>
+                    <?php
+        } else if ($registrationResponse["status"] == "success") {
+            ?>
+                    <div class="server-response success-msg"><?php echo $registrationResponse["message"]; ?></div>
+                    <?php
+        }
+        ?>
+				<?php
+    }
+    ?>
+		
+		<div class="error-msg" id="error-msg"></div>
+					<div class="row">
+						<div class="inline-block">
+							<div class="form-label">
+								Username<span class="required error" id="username-info"></span>
+							</div>
+							<input class="input-box-330" type="text" name="username"
+								id="username">
+						</div>
+					</div>
+					<div class="row">
+						<div class="inline-block">
+							<div class="form-label">
+								Email<span class="required error" id="email-info"></span>
+							</div>
+							<input class="input-box-330" type="email" name="email" id="email">
+						</div>
+					</div>
+					<div class="row">
+						<div class="inline-block">
+							<div class="form-label">
+								Password<span class="required error" id="signup-password-info"></span>
+							</div>
+							<input class="input-box-330" type="password"
+								name="signup-password" id="signup-password">
+						</div>
+					</div>
+					<div class="row">
+						<div class="inline-block">
+							<div class="form-label">
+								Confirm Password<span class="required error"
+									id="confirm-password-info"></span>
+							</div>
+							<input class="input-box-330" type="password"
+								name="confirm-password" id="confirm-password">
+						</div>
+					</div>
+					<div class="row">
+						<input class="btn" type="submit" name="signup-btn"
+							id="signup-btn" value="Sign up">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script>
+function signupValidation() {
+	var valid = true;
+
+	$("#username").removeClass("error-field");
+	$("#email").removeClass("error-field");
+	$("#password").removeClass("error-field");
+	$("#confirm-password").removeClass("error-field");
+
+	var UserName = $("#username").val();
+	var email = $("#email").val();
+	var Password = $('#signup-password').val();
+    var ConfirmPassword = $('#confirm-password').val();
+	var emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+	$("#username-info").html("").hide();
+	$("#email-info").html("").hide();
+
+	if (UserName.trim() == "") {
+		$("#username-info").html("required.").css("color", "#ee0000").show();
+		$("#username").addClass("error-field");
+		valid = false;
+	}
+	if (email == "") {
+		$("#email-info").html("required").css("color", "#ee0000").show();
+		$("#email").addClass("error-field");
+		valid = false;
+	} else if (email.trim() == "") {
+		$("#email-info").html("Invalid email address.").css("color", "#ee0000").show();
+		$("#email").addClass("error-field");
+		valid = false;
+	} else if (!emailRegex.test(email)) {
+		$("#email-info").html("Invalid email address.").css("color", "#ee0000")
+				.show();
+		$("#email").addClass("error-field");
+		valid = false;
+	}
+	if (Password.trim() == "") {
+		$("#signup-password-info").html("required.").css("color", "#ee0000").show();
+		$("#signup-password").addClass("error-field");
+		valid = false;
+	}
+	if (ConfirmPassword.trim() == "") {
+		$("#confirm-password-info").html("required.").css("color", "#ee0000").show();
+		$("#confirm-password").addClass("error-field");
+		valid = false;
+	}
+	if(Password != ConfirmPassword){
+        $("#error-msg").html("Both passwords must be same.").show();
+        valid=false;
+    }
+	if (valid == false) {
+		$('.error-field').first().focus();
+		valid = false;
+	}
+	return valid;
+}
+</script>
+<p><center> If you have account you can click on login link to communicate with our employees</p></center>
+<hr <hr style="width:50%">
+<div class="footer">
+ <footer>
+  <p style="text-align:center">
+  <b>Call:</b> (+250) 788 500 144<br>
+Monday-Thursday (7:30 am-5:30 pm)<br>
+Friday : 7:30 am - 4:30 pm</p>
+</footer>
+</div>
+</BODY>
+</HTML>

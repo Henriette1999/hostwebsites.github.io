@@ -1,0 +1,19 @@
+html { scroll-behavior: smooth; }
+body{
+  display: block;
+  content: '';
+  height: 50%;
+}
+@media(min-width: 768px){
+  .news-input {
+      width: 50%;
+  }  
+}
+/*@media(JQUERY), min-width: 768px: it is for the mediam screen. 
+(.newa-input)is the class in html*/
+
+/*Third party of th sections*/
+.card-title{
+  color: rgb(34, 9, 9);
+  font-weight: bold;
+}
